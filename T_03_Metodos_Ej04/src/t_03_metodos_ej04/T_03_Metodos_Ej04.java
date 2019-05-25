@@ -18,13 +18,14 @@ public class T_03_Metodos_Ej04 {
     *                                                                          *
     * CLASE MAIN                                                               *
     * Funcion del método MAIN:                                                 *
-    * 
+    * Comprobar que funciona el método esMinuscula()                           *
     *                                                                          *
     ***************************************************************************/
-
     public static void main(String[] args) {
         // Esqueleto de la aplicacion: //
         esMinuscula('z');
+        esMinuscula('a');
+        esMinuscula(' ');
     }
     
 
@@ -32,15 +33,15 @@ public class T_03_Metodos_Ej04 {
 
     /*_________________________________________________________________________
      | ~~~~Función del metodo:~~~~                                             |
-     | 
+     | Devuelve true o false dependiendo de si el carácter es minúscula o no.  |
      | ~~~~Parámetros:~~~~                                                     |
-     | 
-     | ~~~~Método dirigido a: FrontEnd //BackEnd~~~~                                     |
+     | caracter: Carácter a evaluar                                            |
+     | ~~~~Método dirigido a:  BackEnd~~~~                                     |
      |________________________________________________________________________*/
     static boolean esMinuscula(char caracter)
     {
         //CUERPO DEL METODO//
-        System.out.println((int)caracter);
+        //System.out.println((int)caracter);
         if(caracter >= 97 && caracter <= 122)
             return true;
         else

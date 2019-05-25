@@ -1,9 +1,9 @@
 package t_03_metodos_ej01;
  /******************************************************************************
  * @author baha                                                                *
- * fecha de inicializacion: May 20, 2019 1:36:39 PM                             *
- * fecha de finalizacion: May 20, 2019 1:42:30 PM                               *
- * nombre del proyecto: T_03_Metodos_Ej01.java                                       *
+ * fecha de inicializacion: May 20, 2019 1:36:39 PM                            *
+ * fecha de finalizacion: May 20, 2019 1:42:30 PM                              *
+ * nombre del proyecto: T_03_Metodos_Ej01.java                                 *
  *******************************************************************************
  *                                                                             *
  * Función de la clase:                                                        *
@@ -19,12 +19,14 @@ public class T_03_Metodos_Ej01 {
     *                                                                          *
     * CLASE MAIN                                                               *
     * Funcion del método MAIN:                                                 *
-    * 
+    * Llamar al método del ejercicio comprobando todos los casos posibles.     *
     *                                                                          *
     ***************************************************************************/
-
     public static void main(String[] args) {
         // Esqueleto de la aplicacion: //
+        System.out.println(calculoPositivo(0));
+        System.out.println(calculoPositivo(7));
+        System.out.println(calculoPositivo(-5));
     }
     
 
@@ -32,10 +34,10 @@ public class T_03_Metodos_Ej01 {
 
     /*_________________________________________________________________________
      | ~~~~Función del metodo:~~~~                                             |
-     | 
+     | Determinar si el número pasado es positivo, negativo, o es cero.        |
      | ~~~~Parámetros:~~~~                                                     |
-     | 
-     | ~~~~Método dirigido a: FrontEnd //BackEnd~~~~                                     |
+     | numero: número entero que se recibe.                                    |
+     | ~~~~Método dirigido a:  BackEnd~~~~                                     |
      |________________________________________________________________________*/
     static char calculoPositivo(int numero)
     {
@@ -52,7 +54,7 @@ public class T_03_Metodos_Ej01 {
         else if(numero == 0)
             caracter = c;
         else
-        {
+        { //esto deberia hacerse con un try catch? o no estar?//
             System.out.println("Introduzca una opción valida");
             caracter = 'z';
         }

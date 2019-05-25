@@ -1,9 +1,9 @@
 package t_03_metodos_ej05;
  /******************************************************************************
  * @author baha                                                                *
- * fecha de inicializacion: May 20, 2019 1:51:29 PM                             *
- * fecha de finalizacion: May 20, 2019 1:54:40 PM                               *
- * nombre del proyecto: T_03_Metodos_Ej05.java                                       *
+ * fecha de inicializacion: May 20, 2019 1:51:29 PM                            *
+ * fecha de finalizacion: May 20, 2019 1:54:40 PM                              *
+ * nombre del proyecto: T_03_Metodos_Ej05.java                                 *
  *******************************************************************************
  *                                                                             *
  * Función de la clase:                                                        *
@@ -19,10 +19,9 @@ public class T_03_Metodos_Ej05 {
     *                                                                          *
     * CLASE MAIN                                                               *
     * Funcion del método MAIN:                                                 *
-    * 
+    * Llamar al método sumaProgresionGeometrica() y mostrar el resultado.      *
     *                                                                          *
     ***************************************************************************/
-
     public static void main(String[] args) {
         // Esqueleto de la aplicacion: //
         System.out.println(sumaProgresionGeometrica(5,2));
@@ -33,10 +32,11 @@ public class T_03_Metodos_Ej05 {
 
     /*_________________________________________________________________________
      | ~~~~Función del metodo:~~~~                                             |
-     | 
+     | Sumar geométricamente la sucesión (x^n)(n=0, n=n)                       |
      | ~~~~Parámetros:~~~~                                                     |
-     | 
-     | ~~~~Método dirigido a: FrontEnd //BackEnd~~~~                                     |
+     | x: base de la progresión geométrica.                                    |
+     | n: exponente del último número que se sumará                            |
+     | ~~~~Método dirigido a:  BackEnd~~~~                                     |
      |________________________________________________________________________*/
     static int sumaProgresionGeometrica(int x, int n)
     {
